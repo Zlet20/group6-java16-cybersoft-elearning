@@ -1,0 +1,49 @@
+// catagory-style
+@import '../../../../custom-palettes.scss';
+
+.catagory-wrapper {
+	display: flex;
+	background: transparent;
+	align-items: center;
+	border: 1px solid $border;
+	border-radius: 5px;
+	padding: 20px 30px;
+	@include transition(0.3s);
+	&:hover {
+		background-color: $theme-color;
+		box-shadow: 0px 40px 40px rgba(24, 44, 74, 0.1);
+		border-color: $theme-color;
+	}
+	.catagory-thumb {
+		margin-right: 22px;
+	}
+	.catagory-content {
+		h3 {
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 4px;
+			line-height: 1;
+		}
+		color: $heading-color;
+		span {
+			color: $body-text;
+			font-size: 16px;
+			font-weight: 600;
+			@media #{$xs,$sm,$md,$lg,$xl} {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+	&:hover .catagory-content :is(a, h3, span) {
+		color: $white;
+	}
+}
+.catagory-wrapper {
+	&:hover svg * {
+		fill: $white;
+	}
+}
+.catagory-wrapper {
+	min-height: calc(100% - 30px);
+}

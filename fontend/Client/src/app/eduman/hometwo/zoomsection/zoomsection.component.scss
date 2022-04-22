@@ -1,0 +1,61 @@
+// zoom style
+@import '../../../../custom-palettes.scss';
+
+.zoom-thumb {
+	margin-left: 50px;
+	@media #{$md,$sm,$xs} {
+		margin-left: 0;
+	}
+}
+.zoom-shape-02 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-shadow: 0px 20px 80px rgba(28, 51, 84, 0.2);
+	@media #{$lg} {
+		right: 11%;
+	}
+}
+.zoom-shape-01 {
+	position: absolute;
+	top: -60px;
+	left: -7%;
+	z-index: -1;
+	-webkit-animation: hero-thumb-sm-animation 4s linear infinite alternate;
+	-moz-animation: hero-thumb-sm-animation 4s linear infinite alternate;
+	-o-animation: hero-thumb-sm-animation 4s linear infinite alternate;
+	animation: hero-thumb-sm-animation 4s linear infinite alternate;
+	@media #{$xs} {
+		display: none;
+	}
+}
+.zoom-class-wrapper {
+	@media #{$md,$sm,$xs} {
+		margin-bottom: 60px;
+		margin-top: -40px;
+	}
+}
+.zoom-thumb-main-img {
+	max-width: 100%;
+}
+.section-title {
+	h2 {
+		font-size: 36px;
+		line-height: 1.3;
+		@media #{$lg} {
+			font-size: 30px;
+		}
+		@media #{$md} {
+			font-size: 30px;
+		}
+		@media #{$sm} {
+			font-size: 28px;
+		}
+		@media #{$xs} {
+			font-size: 26px;
+		}
+		a {
+			color: $theme-color;
+		}
+	}
+}

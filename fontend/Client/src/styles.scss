@@ -1,0 +1,52 @@
+/* Include the core Angular Material styles */
+@import './custom-palettes';
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&family=Raleway:wght@400;500;600;700;900&display=swap");
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '../src/assets/css/fontawesome-all.min.css';
+@import '../src/assets/css/flaticon.css';
+@import '../src/assets/scss/common.scss';
+@import '../src/assets/scss/animation.scss';
+@import '../src/assets/scss/header.scss';
+@import '../src/assets/scss/signup.scss';
+@import '../src/assets/scss/blog.scss';
+@import '../src/assets/scss/courses.scss';
+@import '../src/assets/scss/breadcrumb.scss';
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: $nunito;
+	font-size: 16px;
+	font-weight: normal;
+	color: $body-text;
+	line-height: 26px;
+}
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+	padding-right: var(--bs-gutter-x, 0.938rem);
+	padding-left: var(--bs-gutter-x, 0.938rem);
+}
+.row {
+	--bs-gutter-x: 1.875rem;
+}
+a {
+	text-decoration: none;
+}
+.mat-calendar-body-cell {
+	padding-bottom: 15px !important;
+}
+.mat-input-element::placeholder {
+	color: #575757;
+}
+input.mat-input-element {
+	margin-top: 2px;
+}
+@-moz-document url-prefix() {
+	html {
+	  scroll-behavior: auto !important;
+	}
+  }

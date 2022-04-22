@@ -1,0 +1,194 @@
+// event-inner style
+@import '../../../../custom-palettes.scss';
+
+.event_date_inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+.event_date {
+	width: 120px;
+	height: 120px;
+	background: #f8f8f9;
+	text-align: center;
+	display: table;
+	border-radius: 5px;
+	padding: 0 10px;
+	@media #{$xl,$lg} {
+		width: 100px;
+		height: 100px;
+	}
+}
+.aduence-thumb {
+	margin-right: 32px;
+	img {
+		box-shadow: 0px 0px 10px rgba(17, 32, 80, 0.14);
+		border-radius: 50%;
+		margin-right: -16px;
+		border: 4px solid $white;
+	}
+}
+.event_date_inner {
+	h4 {
+		font-size: 24px;
+		font-weight: 900;
+		color: $theme-color;
+		font-family: "Nunito Sans", sans-serif;
+	}
+	span {
+		color: #171717;
+	}
+}
+.event_info h3 {
+	font-size: 20px;
+}
+
+.event-time {
+	i {
+		line-height: 1;
+		margin-right: 10px;
+	}
+}
+.event-location {
+	i {
+		margin-right: 10px;
+	}
+}
+.event-detalis {
+	margin-bottom: 10px;
+	flex-wrap: wrap;
+}
+.event-aduence {
+	flex-wrap: wrap;
+}
+.event_info {
+	flex-grow: 1;
+	@media #{$lg} {
+		max-width: 375px;
+	}
+	@media #{$md} {
+		max-width: 350px;
+	}
+}
+.get-ticket-btn {
+	margin-right: 15px;
+}
+.single-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 30px;
+	border: 1px solid $border;
+	padding: 15px 15px;
+	background-color: $white;
+	border-radius: 3px;
+	@include transition(0.3s);
+	@media #{$xl,$lg,$sm,$xs} {
+		gap: 20px;
+	}
+	&:hover {
+		box-shadow: 0px 30px 40px rgba(28, 51, 84, 0.07);
+	}
+}
+.single-item .event_info {
+	@media #{$sm,$xs} {
+		order: 2;
+	}
+}
+// event-meta
+.event-meta-thumb {
+	display: flex;
+	align-items: center;
+}
+.event-wrapper {
+	padding: 30px;
+	background: #f8f8f9;
+	height: 110px;
+	width: 100%;
+	border-radius: 4px;
+}
+.event-select .nice-select {
+	&::after {
+		height: 8px;
+		width: 8px;
+		right: 20px;
+		color: $heading-color;
+	}
+	height: 60px;
+	width: 100%;
+	line-height: 60px;
+	position: relative;
+	margin-top: -5px;
+	border: 0;
+	padding: 0 20px;
+	span {
+		font-size: 16px;
+		color: $heading-color;
+		font-weight: 600;
+	}
+}
+.nice-select.open .list {
+	width: 100%;
+	color: $heading-color;
+	font-size: 16px;
+}
+// event-inner
+.find-event-info {
+	h4 {
+		margin-bottom: 35px;
+	}
+}
+.find-event-input {
+	i {
+		color: $theme-color;
+	}
+}
+.find-event-wrapper {
+	position: relative;
+}
+.find-event-input {
+	i {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+	}
+}
+.find-event-input input,
+.event-select select {
+	width: 100%;
+	height: 55px;
+	padding: 0 20px;
+	outline: none;
+	border: 0;
+	background: $white;
+	border-radius: 4px;
+}
+.event-select {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        border-bottom: 2px solid $heading-color;
+        border-right: 2px solid $heading-color;
+        transform: rotate(45deg);
+        width: 8px;
+        height: 8px;
+        right: 22px;
+        top: 22px;
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: relative;
+        padding-left: 15px;
+    }
+}
+.event-sidebar {
+	background-color: #f8f8f9;
+	padding: 30px 30px;
+	border-radius: 5px;
+}
+@include inventualCalenderFieldStyle;

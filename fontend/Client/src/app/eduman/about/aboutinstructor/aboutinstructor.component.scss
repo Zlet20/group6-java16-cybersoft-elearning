@@ -1,0 +1,23 @@
+@import '../../../../custom-palettes.scss';
+
+.become-intructor-area {
+	background-color: #f4f6f9;
+}
+.become-intructor-text {
+	h2 {
+		font-size: 36px;
+		margin-bottom: 30px;
+		@media #{$md} {
+			font-size: 32px;
+		}
+		@media #{$sm} {
+			font-size: 28px;
+		}
+		@media #{$xs} {
+			font-size: 26px;
+		}
+	}
+	p {
+		margin-bottom: 40px;
+	}
+}

@@ -1,0 +1,83 @@
+// event-shape
+@import '../../../../custom-palettes.scss';
+
+.event-date {
+	height: 60px;
+	width: 90px;
+	background: $theme-color-2;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	line-height: 60px;
+	font-size: 36px;
+	font-weight: 700;
+	color: $heading-color;
+}
+.event-month {
+	background: $white;
+	display: flex;
+	height: 40px;
+	width: 90px;
+	justify-content: center;
+	line-height: 40px;
+	font-size: 15px;
+	color: $heading-color;
+}
+.current-event-box {
+	@media #{$xs} {
+		margin-bottom: 30px;
+	}
+}
+.current-event-date {
+	gap: 10px;
+	@media #{$lg} {
+		margin-right: -50px;
+	}
+	@media #{$xs} {
+		flex-direction: column;
+	}
+}
+.event-tour {
+	background: $white;
+	border: 1px solid #f6f8fb;
+	display: flex;
+	justify-content: space-between;
+	width: 560px;
+	padding: 18px 30px 16px 30px;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	@media #{$xs} {
+		padding: 18px 10px 16px 10px;
+		width: 100%;
+	}
+}
+.event-box-text {
+	h3 {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 12px;
+		line-height: 1;
+	}
+	span {
+		font-size: 14px;
+		font-weight: 600;
+		margin-right: 20px;
+		i {
+			margin-right: 5px;
+		}
+	}
+}
+.event-arrow {
+	color: #7f8a9f;
+
+	height: 45px;
+	width: 45px;
+	background-color: $theme-bg;
+	text-align: center;
+	line-height: 45px;
+	&:hover {
+		color: $white;
+		background: $theme-color;
+	}
+}

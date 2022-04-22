@@ -1,0 +1,38 @@
+@import '../../../../custom-palettes.scss';
+
+.faq-topic-title {
+	h3 {
+		font-size: 28px;
+		@media #{$xs} {
+			font-size: 26px;
+		}
+	}
+}
+.topic-items {
+	background: transparent;
+	border: 1px solid $border;
+	padding: 50px 25px 35px 25px;
+	border-radius: 5px;
+	@include transition(0.3s);
+	&:hover {
+		box-shadow: 0px 40px 40px rgba(24, 44, 74, 0.07);
+	}
+}
+.topic-wrapper:hover .topic-svg {
+	transform: translateY(-10px);
+}
+.topic-svg {
+	transition: 0.3s;
+	svg {
+		margin-bottom: 33px;
+	}
+}
+.topic-content {
+	h4 {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,9 @@
+1. course route for course.html page
+2. about route for about.html page
+3. instructor route for instructor.html page
+4. become-instructor route for become-instructor.html page
+5. course-details route for course-details.html page
+6. contact route for contact.html page
+7. instructor-profile route for instructor-profile.html page
+8. zoom-class route for zoom-class.html page
+9. route for .html page

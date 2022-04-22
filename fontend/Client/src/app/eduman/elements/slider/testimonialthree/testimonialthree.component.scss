@@ -1,0 +1,52 @@
+// feedback
+@import '../../../../../custom-palettes.scss';
+@import "~swiper/css/bundle";
+
+.feedback-header {
+	display: flex;
+	margin-bottom: 40px;
+	align-items: center;
+}
+.feedback-icon {
+	i {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		font-size: 72px;
+		color: #ced5e5;
+		z-index: -1;
+	}
+}
+.feedback-body {
+	h3 {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 20px;
+		color: $theme-color;
+	}
+}
+.feedback-content {
+	@media #{$md,$sm,$xs} {
+		margin-left: 0px;
+	}
+}
+.feedback-items {
+	background: $white;
+	padding: 30px 30px 30px 30px;
+	z-index: 2;
+}
+
+.feedback-title {
+	margin-left: 20px;
+	h4 {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 3px;
+	}
+}
+.testimonial-icon {
+	i {
+		color: $theme-color-2;
+		font-size: 15px;
+	}
+}

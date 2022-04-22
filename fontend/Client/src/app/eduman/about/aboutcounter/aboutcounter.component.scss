@@ -1,0 +1,20 @@
+// homepage-2
+@import '../../../../custom-palettes.scss';
+
+.count-number {
+	span {
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 10px;
+		display: inline-block;
+		color: $heading-color;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 0px;
+	}
+}
+.counter-icon svg {
+	margin-bottom: 30px;
+}

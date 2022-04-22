@@ -1,0 +1,80 @@
+// message style
+@import '../../../../custom-palettes.scss';
+
+.message-sticker {
+	img {
+		padding-left: 22px;
+		max-width: 100%;
+		@media #{$md,$sm,$xs} {
+			padding-left: 0;
+		}
+	}
+}
+.message-profile-text {
+	margin-bottom: 40px;
+	span {
+		font-size: 18px;
+		font-weight: 600;
+		color: $heading-color;
+		margin-bottom: 27px;
+		display: block;
+	}
+}
+.message-meta {
+	display: flex;
+	align-items: center;
+	@media #{$md,$sm,$xs} {
+		margin-bottom: 50px;
+	}
+}
+.message-meta-link {
+	margin-left: 20px;
+	h4 {
+		line-height: 1;
+		margin-bottom: 3px;
+		font-size: 18px;
+	}
+	p {
+		margin-bottom: 0px;
+	}
+}
+.feedback-wrapper {
+	padding-left: 60px;
+	@media #{$xs,$sm,$md} {
+		padding-left: 0px;
+		margin-top: 25px;
+	}
+}
+.etablist-price {
+	height: 160px;
+	width: 160px;
+	background: #2467ec;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: absolute;
+	bottom: 2%;
+	right: 0;
+	@media #{$md,$sm} {
+		left: 250px;
+	}
+	@media #{$xs} {
+		left: 0px;
+	}
+}
+.etablist-price {
+	p {
+		color: $white;
+		margin-bottom: 0;
+		span {
+			display: block;
+			text-align: center;
+			font-size: 40px;
+			font-weight: 900;
+			padding: 5px 0;
+			line-height: 1;
+		}
+	}
+}

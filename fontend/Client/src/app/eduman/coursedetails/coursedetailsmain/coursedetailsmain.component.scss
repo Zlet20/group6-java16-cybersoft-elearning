@@ -1,0 +1,81 @@
+@import '../../../../custom-palettes.scss';
+
+.hero-arera.course-item-height {
+	z-index: 0;
+}
+.course-detalis-area {
+	z-index: inherit;
+}
+.comment-title h3 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.comment-title p {
+	color: #454545;
+}
+.comment-rating span {
+	font-size: 15px;
+	color: #454545;
+	margin-right: 5px;
+}
+.comment-rating ul li {
+	display: inline-block;
+}
+.comment-rating ul li a {
+	font-size: 14px;
+	color: $theme-color-2;
+}
+.comment-rating ul {
+	display: inline-block;
+}
+.comment-agree input {
+	margin: 0;
+	appearance: none;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: transparent;
+	border: 2px solid $border;
+	border-radius: 2px;
+	outline: none;
+}
+.comment-agree label {
+	margin-left: 5px;
+	font-size: 15px;
+	color: #454545;
+}
+.comment-agree input::placeholder {
+	color: $body-text;
+	font-size: 14px;
+	opacity: 1;
+}
+.comment-input input {
+	height: 60px;
+	width: 100%;
+	background: #f8f8f9;
+	border: none;
+	padding: 15px 20px;
+	border-radius: 4px;
+	outline: 0;
+}
+.comment-input input::placeholder {
+	color: $body-text;
+	font-size: 14px;
+	opacity: 1;
+}
+.comment-textarea {
+	height: 170px;
+	width: 100%;
+	background: #f8f8f9;
+	border: none;
+	padding: 15px 20px;
+	border-radius: 4px;
+	resize: none;
+	outline: 0;
+}
+.comment-textarea::placeholder {
+	color: $body-text;
+	font-size: 14px;
+	opacity: 1;
+}

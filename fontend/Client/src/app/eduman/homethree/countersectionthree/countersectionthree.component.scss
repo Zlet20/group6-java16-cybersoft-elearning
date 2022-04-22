@@ -1,0 +1,24 @@
+// university-couner
+@import '../../../../custom-palettes.scss';
+
+.counter-img {
+	svg {
+		margin-bottom: 25px;
+	}
+}
+.university-couner-text {
+	span {
+		font-size: 36px;
+		font-weight: 700;
+		color: $white;
+		margin-bottom: 15px;
+		display: inline-block;
+	}
+}
+.university-couner-text {
+	p {
+		font-size: 18px;
+		font-weight: 600;
+		color: $white;
+	}
+}

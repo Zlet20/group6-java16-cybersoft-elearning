@@ -1,0 +1,179 @@
+//shop details
+@import '../../../../custom-palettes.scss';
+
+.product-details-img {
+	margin-right: 50px;
+	@media #{$xs} {
+		margin-right: 0;
+	}
+	img {
+		width: 100%;
+		@media #{$md,$sm} {
+			width: 350px;
+		}
+	}
+}
+.product-side-info .product-name {
+	font-size: 36px;
+	@media #{$sm,$xs} {
+		font-size: 28px;
+	}
+}
+.product-side-info .product-price {
+	font-size: 20px;
+	font-weight: 700;
+	color: $theme-color;
+}
+.product-side-info p {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.product-quantity-cart {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.product-quantity-cart .cart-minus {
+	height: 55px;
+	width: 55px;
+	border: none;
+}
+.product-quantity-form .cart-plus {
+	height: 55px;
+	width: 55px;
+	border: none;
+}
+.product-quantity-cart .cart-input {
+	height: 55px;
+	width: 55px;
+	border: none;
+	margin: 0px;
+	line-height: 53px;
+}
+.product-quantity-cart .product-quantity-form {
+	border: 1px solid $border;
+	border-radius: 4px;
+}
+.comment-title h3 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.comment-title p {
+	color: #454545;
+}
+
+.comment-rating span {
+	font-size: 15px;
+	color: #454545;
+	margin-right: 5px;
+}
+
+.comment-rating ul li {
+	display: inline-block;
+}
+
+.comment-rating ul li a {
+	font-size: 14px;
+	color: $theme-color-2;
+}
+
+.comment-rating ul {
+	display: inline-block;
+}
+.comment-agree input {
+	margin: 0;
+	appearance: none;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: transparent;
+	border: 2px solid $border;
+	border-radius: 2px;
+	outline: none;
+}
+
+.comment-agree label {
+	margin-left: 5px;
+	font-size: 15px;
+	color: #454545;
+}
+
+.comment-agree input::placeholder {
+	color: $body-text;
+	font-size: 14px;
+	opacity: 1;
+}
+
+.comment-input input {
+	height: 60px;
+	width: 100%;
+	background: #f8f8f9;
+	border: none;
+	padding: 15px 20px;
+	border-radius: 4px;
+	outline: 0;
+}
+.comment-input input::placeholder {
+	color: $body-text;
+	font-size: 14px;
+	opacity: 1;
+}
+
+.comment-textarea {
+	height: 170px;
+	width: 100%;
+	background: #f8f8f9;
+	border: none;
+	padding: 15px 20px;
+	border-radius: 4px;
+	resize: none;
+	outline: 0;
+}
+
+.comment-textarea::placeholder {
+	color: $body-text;
+	font-size: 14px;
+	opacity: 1;
+}
+.product-details-nav .nav-item {
+	position: relative;
+}
+.product-details-nav .nav-item::before {
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 1px;
+	background: $theme-color;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: 0.3s;
+}
+.product-details-nav .nav-item.active::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: $theme-color;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.product-details-nav .nav-item {
+	position: relative;
+	border: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	margin-right: 20px;
+	font-weight: 600;
+	color: $heading-color;
+	@media #{$lg,$sm,$md,$xs} {
+		font-size: 20px;
+	}
+}
+.product-details-nav .nav-item.active {
+	color: $theme-color;
+	font-weight: 600;
+}

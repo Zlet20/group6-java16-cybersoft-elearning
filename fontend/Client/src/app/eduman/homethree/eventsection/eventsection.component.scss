@@ -1,0 +1,23 @@
+// event-shape
+@import '../../../../custom-palettes.scss';
+
+.event-shape {
+	position: absolute;
+	right: 13%;
+	top: 325px;
+	@media #{$xxl} {
+		right: 6%;
+	}
+	@media #{$xl} {
+		right: 0%;
+	}
+	@media #{$lg} {
+		right: 4%;
+	}
+	@media #{$md,$sm,$xs} {
+		display: none;
+	}
+}
+.event-area {
+	background-color: $theme-bg;
+}

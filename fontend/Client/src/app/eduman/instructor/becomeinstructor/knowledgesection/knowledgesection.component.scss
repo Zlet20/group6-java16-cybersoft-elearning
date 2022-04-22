@@ -1,0 +1,50 @@
+// intructore-features
+@import '../../../../../custom-palettes.scss';
+
+.features-box {
+	padding: 0 30px;
+	@media #{$xl,$lg,$xs} {
+		padding: 0 15px;
+	}
+}
+.features-svg {
+	margin-bottom: 30px;
+	transition: 0.3s;
+}
+.features-box:hover .features-svg {
+	transform: translateY(-10px);
+}
+.features-text {
+	h4 {
+		margin-bottom: 20px;
+	}
+}
+.features-btn {
+	a {
+		height: 70px;
+		width: 70px;
+		background: $white;
+		line-height: 70px;
+		border-radius: 50%;
+		color: $theme-color;
+		font-size: 18px;
+		animation: pulse 2s infinite;
+		text-align: center;
+		display: inline-block;
+	}
+}
+.features-btn {
+	position: relative;
+	margin-right: 20px;
+}
+.video-btn-text {
+	span {
+		color: $white;
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		@media #{$xs} {
+			font-size: 14px;
+		}
+	}
+}

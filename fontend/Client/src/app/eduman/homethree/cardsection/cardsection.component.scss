@@ -1,0 +1,91 @@
+// eduman-card style
+@import '../../../../custom-palettes.scss';
+
+.university-main-wraper {
+	@media #{$md,$sm,} {
+		flex-wrap: wrap;
+		> * {
+			flex: 0 0 50%;
+		}
+	}
+	@media #{$xs} {
+		flex-wrap: wrap;
+	}
+}
+.university-card {
+	margin-top: -140px;
+}
+.university-course-box {
+	padding: 42px 48px 42px 48px;
+	background: $theme-color;
+	@media #{$xl} {
+		padding: 35px 48px 40px 48px;
+	}
+	@media #{$lg} {
+		padding: 28px 20px 40px 20px;
+	}
+	@media #{$sm} {
+		padding: 35px 20px 40px 19px;
+	}
+	@media #{$xs} {
+		padding: 42px 30px 42px 30px;
+		width: 100%;
+	}
+}
+.university-main-wraper {
+	position: relative;
+	z-index: 5;
+}
+.university-card-wrapper {
+	padding: 45px 40px 45px 40px;
+	background-color: #f6f8fb;
+	@media #{$lg} {
+		padding: 47px 20px 35px 20px;
+	}
+	@media #{$xs} {
+		padding: 45px 30px 45px 30px;
+		width: 100%;
+	}
+}
+.university-card-text {
+	p {
+		font-weight: 700;
+		color: $white;
+		margin-bottom: 15px;
+		display: block;
+		line-height: 1;
+	}
+	span {
+		font-weight: 900;
+	}
+	h3 {
+		font-size: 28px;
+		font-weight: 500;
+		margin-bottom: 32px;
+		line-height: 1.3;
+		color: $white;
+	}
+}
+.university-card-icon {
+	width: 65px;
+	height: 65px;
+	background: $white;
+	line-height: 65px;
+	text-align: center;
+	border-radius: 50%;
+	margin-bottom: 30px;
+	@include transition(0.3s);
+}
+.university-card-wrapper:hover .university-card-icon {
+	transform: translateY(-10px);
+}
+.university-card-content {
+	h3 {
+		font-size: 18px;
+		margin-bottom: 15px;
+		line-height: 1;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
