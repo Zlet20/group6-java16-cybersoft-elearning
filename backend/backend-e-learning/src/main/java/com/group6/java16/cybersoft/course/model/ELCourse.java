@@ -1,4 +1,4 @@
-package com.group6.java16.cybersoft.role.model;
+package com.group6.java16.cybersoft.course.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -10,16 +10,15 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
-@Setter
 @Getter
+@Setter
 @NoArgsConstructor
 @SuperBuilder
 @Entity
-@Table(name = "el_role")
-public class ELRole extends BaseEntity {
-
-	private String name;
-
+@Table(name = "el_course")
+public class ELCourse extends BaseEntity {
+	private String courseName;
+	private int courseTime;
 	private String description;
 
 }

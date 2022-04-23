@@ -27,10 +27,10 @@ export const content: Routes = [
     }
   },
   {
-    path: 'pages',
+    path: 'roles',
     loadChildren: () => import('../../components/pages/pages.module').then(m => m.PagesModule),
     data: {
-      breadcrumb: "Pages"
+      breadcrumb: "Roles"
     }
   },
   {

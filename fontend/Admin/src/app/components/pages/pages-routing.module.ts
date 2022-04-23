@@ -8,19 +8,19 @@ const routes: Routes = [
     path: '',
     children: [
       {
-        path: 'list-page',
+        path: 'list-role',
         component: ListPageComponent,
         data: {
-          title: "List Page",
-          breadcrumb: "List Page"
+          title: "List Role",
+          breadcrumb: "List Role"
         }
       },
       {
-        path: 'create-page',
+        path: 'create-role',
         component: CreatePageComponent,
         data: {
-          title: "Create Page",
-          breadcrumb: "Create Page"
+          title: "Create Role",
+          breadcrumb: "Create Role"
         }
       }
     ]

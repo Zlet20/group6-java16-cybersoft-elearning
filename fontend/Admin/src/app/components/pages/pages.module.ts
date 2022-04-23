@@ -10,6 +10,7 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { PagesRoutingModule } from './pages-routing.module';
 import { ListPageComponent } from './list-page/list-page.component';
 import { CreatePageComponent } from './create-page/create-page.component';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 @NgModule({
   declarations: [ListPageComponent, CreatePageComponent],
@@ -19,7 +20,9 @@ import { CreatePageComponent } from './create-page/create-page.component';
     NgbModule,
     ReactiveFormsModule,
     CKEditorModule,
-    NgxDatatableModule
+    NgxDatatableModule,
+    Ng2SmartTableModule
+
   ]
 })
 export class PagesModule { }
