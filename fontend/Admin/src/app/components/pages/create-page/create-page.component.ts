@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { response } from 'express';
+import { ToastrService } from 'ngx-toastr';
+import { BaseRole } from 'src/app/api-clients/model/role.model';
+import { RoleClient } from 'src/app/api-clients/role.client';
+
 
 @Component({
   selector: 'app-create-page',
@@ -10,27 +15,29 @@ export class CreatePageComponent implements OnInit {
   public generalForm: FormGroup;
   public seoForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
-    this.createGeneralForm();
-    this.createSeoForm();
+  constructor(private formBuilder: FormBuilder,
+    private roleClient: RoleClient,
+    private toastr: ToastrService) {
+    this.createRoleForm();
   }
 
-  createGeneralForm() {
+  createRoleForm() {
     this.generalForm = this.formBuilder.group({
-      name: [''],
-      desc: [''],
-      status: ['']
-    })
+      name: ['', [Validators.required, Validators.minLength(3)]],
+      description: ['', [Validators.required, Validators.minLength(3)]]
+    });
   }
-  createSeoForm() {
-    this.seoForm = this.formBuilder.group({
-      title: [''],
-      keyword: [''],
-      meta_desc: ['']
-    })
-  }
-
   ngOnInit() {
   }
+  
+  createRole(): void{
+  let name = this.generalForm.controls['name'].value;
+  let description = this.generalForm.controls['description'].value;
+  this.roleClient.createRole(new BaseRole(name,description)).subscribe
+  (response =>{
+    this.toastr.success('Success','Create role success')
+  })
+  }
+
 
 }
