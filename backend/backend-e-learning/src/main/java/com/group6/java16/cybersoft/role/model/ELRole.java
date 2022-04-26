@@ -1,6 +1,11 @@
 package com.group6.java16.cybersoft.role.model;
 
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.persistence.MappedSuperclass;
 import javax.persistence.Table;
 
 import com.group6.java16.cybersoft.common.model.BaseEntity;
@@ -21,5 +26,8 @@ public class ELRole extends BaseEntity {
 	private String name;
 
 	private String description;
+	
+	@ManyToMany(mappedBy = "roles")
+	private Set<ELGroup> groups = new LinkedHashSet<ELGroup>();
 
 }

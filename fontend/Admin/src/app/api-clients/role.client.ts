@@ -17,7 +17,7 @@ export class RoleClient {
         return this.httpClient.post<Response<RoleResponse>>(this.apiEndpoint , role);
 
     }
-    searchAll(pageRequest:PageRequest): Observable<Response<PageResponse<RoleResponse>>>{
+    search(pageRequest:PageRequest): Observable<Response<PageResponse<RoleResponse>>>{
         const options = {
             params: { ...pageRequest },
         };
@@ -34,7 +34,7 @@ export class RoleClient {
     updateById(id:string,rq:BaseRole): Observable<Response<RoleResponse>>{
         
         
-        return this.httpClient.delete<Response<RoleResponse>>(this.apiEndpoint+"/"+id);
+        return this.httpClient.put<Response<RoleResponse>>(this.apiEndpoint+"/"+id,rq);
 
     }
 }
