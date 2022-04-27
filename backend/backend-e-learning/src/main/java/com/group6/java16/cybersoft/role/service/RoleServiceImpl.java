@@ -60,7 +60,7 @@ public class RoleServiceImpl implements RoleService {
 		Pageable pageable = PageRequest.of(page, size);
 		Page<ELRole> rp = null;
 
-		if (null != fieldNameSort && fieldNameSort.matches("name|createdBy|createdAt")) {
+		if (null != fieldNameSort && fieldNameSort.matches("name")) {
 			pageable = PageRequest.of(page, size,
 					isAscending ? Sort.by(fieldNameSort).ascending() : Sort.by(fieldNameSort).descending());
 		}
