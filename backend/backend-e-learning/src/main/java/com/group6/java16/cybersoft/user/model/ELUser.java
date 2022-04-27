@@ -31,32 +31,32 @@ public class ELUser extends BaseEntity {
 	private String password;
 
 	private String displayName;
-	
+
 	private String email;
-	
-    @Enumerated(EnumType.STRING)
+
+	@Enumerated(EnumType.STRING)
 	private UserStatus status;
 
-    private String firstName;
- 	
+	private String firstName;
+
 	private String lastName;
 
 	private String avatar;
-	
+
 	private String department;
-	
+
 	private String major;
-	
+
 	private String hobbies;
-	
+
 	private String facebook;
 
 	private String gender;
 
 	private String phone;
-	
-    @JsonIgnore
-	 @ManyToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST })
-	 @JoinTable(name = "el_user_group", joinColumns = @JoinColumn(name ="user_id"), inverseJoinColumns = @JoinColumn (name = "group_id"))
-    private Set<ELGroup> groups = new LinkedHashSet<ELGroup>();
+
+	@ManyToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST })
+	@JoinTable(name = "el_group_user", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+	private Set<ELGroup> groups = new LinkedHashSet<ELGroup>();
+
 }
